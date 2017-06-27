@@ -1,0 +1,130 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, LOCALE_ID } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+//Routing
+import { Routing, RoutingProviders } from './app.routing';
+//Root
+import { AppComponent } from './app.component';
+//Shared
+import { HeadbarComponent } from './components/shared/headbar/headbar.component';
+import { MenuComponent } from './components/shared/menu/menu.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { ModalComponent } from './components/shared/modal/modal.component';
+import { ErrorsComponent } from './components/shared/errors/errors.component';
+import { AlertComponent } from './components/shared/alert/alert.component';
+//Components
+import { OrganizationComponent } from './components/organization/organization.component';
+import { EmployeeComponent } from './components/employee/employee.component';
+import { UserComponent } from './components/user/user.component';
+import { RegisterComponent } from './components/register/register.component';
+import { CustomerComponent } from './components/customer/customer.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { DocumentComponent } from './components/document/document.component';
+import { SegmentComponent } from './components/segment/segment.component';
+import { DocumentTypeComponent } from './components/document-type/document-type.component';
+import { OfferComponent } from './components/offer/offer.component';
+import { OfferFieldComponent } from './components/offer-field/offer-field.component';
+import { SegmentModalComponent } from './components/segment-modal/segment-modal.component';
+<<<<<<< HEAD
+import { HomeComponent } from './components/home/home.component';
+=======
+import { DocumentTypeModalComponent } from './components/document-type-modal/document-type-modal.component';
+import { CustomerModalComponent } from './components/customer-modal/customer-modal.component';
+import { DocumentModalComponent } from './components/document-modal/document-modal.component';
+import { ContactModalComponent } from './components/contact-modal/contact-modal.component';
+import { EmployeeModalComponent } from './components/employee-modal/employee-modal.component';
+import { DocumentModalEnviarComponent } from './components/document-modal/document-modal-send.component';
+import { DocumentModalAcceptComponent } from './components/document-modal/document-modal-accept.component';
+import { OfferFieldModalComponent } from './components/offer-field-modal/offer-field-modal.component';
+import { OfferModalComponent } from './components/offer-modal/offer-modal.component';
+
+>>>>>>> f8a0e8928bd7ef4206681efedd8aa5295e0ab5dc
+//Pages
+import { HomePage } from './pages/home/home.page';
+import { LoginPage } from './pages/login/login.page';
+import { CustomerPage } from './pages/customer/customer.page';
+import { ConfigurationPage } from './pages/configuration/configuration.page';
+import { OfferPage } from './pages/offer/offer.page';
+import { ContactPage } from './pages/contact/contact.page';
+import { DocumentPage } from './pages/document/document.page';
+//Services
+import { AuthService } from './services/auth.service';
+//Pipes
+import { CnpjPipe } from './pipes/cnpj.pipe';
+import { CpfPipe } from './pipes/cpf.pipe';
+import { CepPipe } from './pipes/cep.pipe';
+import { PhonePipe } from './pipes/phone.pipe';
+import { BooleanPipe } from './pipes/boolean.pipe';
+import { StatusPipe } from './pipes/status.pipe';
+import { DocumentPipe } from './pipes/document.pipe';
+import { PluralPipe } from './pipes/plural.pipe';
+//Directives
+import { MaskDirective } from './directives/mask.directive';
+
+@NgModule({
+	declarations: [
+		AppComponent,
+		HomePage,
+		LoginPage,
+		CustomerPage,
+		ConfigurationPage,
+		OfferPage,
+		ContactPage,
+		DocumentPage,
+		HeadbarComponent,
+		MenuComponent,
+		FooterComponent,
+		OrganizationComponent,
+		EmployeeComponent,
+		UserComponent,
+		RegisterComponent,
+		CustomerComponent,
+		ContactComponent,
+		DocumentComponent,
+		SegmentComponent,
+		DocumentTypeComponent,
+		OfferComponent,
+		OfferFieldComponent,
+		CnpjPipe,
+		CpfPipe,
+		CepPipe,
+		PhonePipe,
+		BooleanPipe,
+		StatusPipe,
+		DocumentPipe,
+		PluralPipe,
+		ModalComponent,
+		ErrorsComponent,
+		MaskDirective,
+		AlertComponent,
+		SegmentModalComponent,
+<<<<<<< HEAD
+		HomeComponent,
+=======
+		DocumentTypeModalComponent,
+		CustomerModalComponent,
+		DocumentModalComponent,
+		ContactModalComponent,
+		EmployeeModalComponent,
+		OfferFieldModalComponent,
+		DocumentModalEnviarComponent,
+		DocumentModalAcceptComponent,
+		OfferModalComponent,
+>>>>>>> f8a0e8928bd7ef4206681efedd8aa5295e0ab5dc
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		ReactiveFormsModule,
+		HttpModule,
+		Routing
+	],
+	providers: [
+		AuthService,
+		{ provide: LOCALE_ID, useValue: 'pt-BR' }
+	],
+	bootstrap: [AppComponent]
+})
+export class AppModule { }

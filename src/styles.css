@@ -1,0 +1,173 @@
+html {
+    font-size: 14px;
+}
+
+.large-text {
+    font-size: 3em;
+}
+
+.medium-text {
+    font-size: 1.5em;
+}
+
+header.nav {
+    height: 65px;
+}
+
+.menu-label {
+    font-size: 1em;
+}
+
+.hero.is-warning .tabs.is-boxed li.is-active a,
+.hero.is-warning .tabs.is-boxed li.is-active a:hover,
+.hero.is-warning .tabs.is-toggle li.is-active a,
+.hero.is-warning .tabs.is-toggle li.is-active a:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #363636;
+}
+
+.hero.is-small .hero-body {
+    padding-bottom: 0;
+    padding-top: 1rem;
+}
+
+.is-very-large {
+    font-size: 1200px;
+}
+
+.is-very-large>.fa {
+    vertical-align: sub;
+    margin-left: 22px;
+}
+
+.table {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.textarea {
+    resize: none;
+}
+
+form>.columns>.column {
+    padding-top: 0;
+}
+
+.form-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 10px;
+}
+
+.input,
+.textarea {
+    box-shadow: none;
+}
+
+.form-table {
+    margin-top: -15px;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.columns.label-columns>.column {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.modal-background {
+    background-color: rgba(10, 10, 10, .70);
+}
+
+.button.is-warning {
+    background-color: #febd11;
+}
+
+.hero.is-warning {
+    background-color: #febd11;
+}
+
+.is-warning {
+    background-color: #febd11;
+}
+
+.login-logo {
+    width: 20%;
+    margin-bottom: 40px;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+td>a {
+    margin-right: 10px;
+}
+
+td>a:last-child {
+    margin-right: 0px;
+}
+
+td:last-child {
+    white-space: nowrap;
+}
+
+.icon {
+    vertical-align: initial;
+}
+
+.status-pending {
+    color: #ffdd57
+}
+
+.status-approved {
+    color: #23d160
+}
+
+.status-expired,
+.status-rejected {
+    color: #ff3860
+}
+
+.section {
+    padding: 2rem 1.5rem;
+}
+
+.box .field {
+    margin-bottom: 0;
+}
+
+a .inverse-icon-color {
+    color: #363636;
+    cursor: pointer;
+    text-decoration: none;
+    transition: none 86ms ease-out;
+}
+a .inverse-icon-color:hover { 
+    color: #00d1b2;
+}
+
+.subtitle-is-1{
+    font-size: 1em;
+    color: #4a4a4a;
+    font-weight: 300;
+    line-height: 1.0;
+    margin-top: -1em;
+    margin-bottom: 0.7em;  
+}
+
+.subtitle-no-top-margin{
+    margin: -1em; 
+    margin-bottom: 0em; 
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+p .center-text{
+    text-align: center;
+}

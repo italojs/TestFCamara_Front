@@ -1,0 +1,23 @@
+<table class="table">
+		<tbody>
+			<!--<tr *ngFor="let product of products">
+				<td width="5%" class="has-text-centered"></td>
+				<td width="40%">
+					<p><strong>{{ document.documentType.title }}</strong><small *ngIf="document.expirationDate != null">&nbsp; (Vcto.: {{ document.expirationDate | date:'shortDate' }})</small></p>
+					<p>Grupo: {{ document.documentType.documentGroup }}</p>
+					<p>Empresa: {{ document.customer.name }}</p>
+				</td>
+				<td width="35%">
+					<p *ngIf="document.sender !== null">Enviado por: {{ document.sender?.firstName }} {{ document.sender?.lastName }}</p>
+					<p *ngIf="document.approver !== null">Aprovado por: {{ document.approver?.firstName }} {{ document.approver?.lastName }}</p>
+				</td>
+				<td width="15%" [innerHTML]="document.status | status"></td>
+				<td width="5%">
+					<a *ngIf="document.status != 'Pending'" (click)="send(document)" title="Enviar"><span class="icon is-small"><i class="fa fa-paper-plane"></i></span></a>
+					<a *ngIf="document.status == 'Pending'" (click)="approval(document)" title="Aprovar"><span class="icon is-small"><i class="fa fa-thumbs-o-up"></i></span></a>
+					<a *ngIf="document.status != 'Empty'" (click)="removeFile(document)" title="Apagar arquivo"><span class="icon is-small"><i class="fa fa-eraser"></i></span></a>
+					<a (click)="delete(document)" title="Remover"><span class="icon is-small"><i class="fa fa-trash"></i></span></a>
+				</td>
+			</tr>-->
+		</tbody>
+	</table>
