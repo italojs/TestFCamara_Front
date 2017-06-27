@@ -1,0 +1,31 @@
+<!--<div id="modal" class="modal">
+	<div class="modal-background"></div>
+	<div class="modal-card">
+		<header class="modal-card-head">
+			<p class="modal-card-title">{{modalTitle}}</p>
+			<button (click)="closeModal()" class="delete"></button>
+		</header>
+		<section class="modal-card-body">
+			<div *ngIf="errors.length > 0" class="notification is-danger" id="notification">
+				<ul>
+					<li *ngFor="let error of errors">{{ error.errorMessage }}</li>
+				</ul>
+			</div>
+			<form [formGroup]="form">
+				<div class="columns">
+					<div id="title" class="column">
+						<label class="label">Nome</label>
+						<p class="control"><input class="input" type="text" formControlName="title"></p>
+					</div>
+				</div>
+			</form>
+		</section>
+		<footer class="modal-card-foot">
+			<button (click)="save()" [disabled]="!form.valid" class="button is-success">
+				<span class="icon is-small"><i class="fa fa-check"></i></span>
+				<span>Salvar</span>
+			</button>
+			<button (click)="closeModal()" class="button">Cancelar</button>
+		</footer>
+	</div>
+</div>-->

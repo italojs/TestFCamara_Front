@@ -1,0 +1,30 @@
+<section class="hero is-fullheight">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<img class="login-logo" src="https://media.lovemondays.com.br/logos/72d0ca/fcamara-formacao-e-consultoria-original.png">
+			<div class="columns">
+				<div class="column is-4 is-offset-4">
+					<div *ngIf="errors.length > 0" class="notification is-danger" id="notification">
+						<ul>
+							<li *ngFor="let error of errors">{{ error.message }}</li>
+						</ul>
+					</div>
+					<form [formGroup]="form">
+						<p id="email" class="control field has-icon">
+							<input class="input is-large" type="email" placeholder="Usuário" formControlName="username">
+							<span class="icon is-medium"><i class="fa fa-user"></i></span>
+						</p>
+						<p id="password" class="control field has-icon">
+							<input class="input is-large" type="password" placeholder="Senha" formControlName="password">
+							<span class="icon is-medium"><i class="fa fa-lock"></i></span>
+						</p>
+						<p class="control">
+							<button (click)="submit()" [disabled]="!form.valid" class="button is-warning is-large is-fullwidth">Entrar</button>
+							<li routerLinkActive="is-active"><a routerLink="/document"><i class="fa fa-book fa-fw"></i>&nbsp; Documentos</a></li>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

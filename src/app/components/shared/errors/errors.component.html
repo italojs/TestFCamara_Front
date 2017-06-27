@@ -1,0 +1,5 @@
+<div *ngIf="errorList.length > 0" class="notification is-danger" id="notification">
+	<ul>
+		<li *ngFor="let error of errorList">{{ error.errorMessage }}</li>
+	</ul>
+</div>
