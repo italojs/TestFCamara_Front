@@ -38,7 +38,7 @@ Do a login with user above and wait 1 minute, after that reload the home page(f5
  
 Login page
 
-#### `/home"` 
+#### `/home` 
 
 Home Page(product list).
 
