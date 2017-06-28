@@ -30,17 +30,10 @@ export class LoginPage implements OnInit {
 		this.dataService.authenticate(this.form.value).subscribe(
 			result => {
 				localStorage.setItem('macaw.token', result.token);
-				localStorage.setItem('macaw.user', JSON.stringify(result.user));
 				this.router.navigateByUrl('/home');
 			},
 			error => {
 				this.errors = JSON.parse(error._body).errors;
 			});
-	}
-	isValid(controlName: string): boolean {
-		if (!this.form.controls[controlName].valid && !this.form.controls[controlName].pristine)
-			return false;
-		else
-			return true;
 	}
 }
