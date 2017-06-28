@@ -30,6 +30,7 @@ Do a login with user above and wait 1 minute, after that reload the home page(f5
 
 - The token is been logged in cosole.
 - All requests is in `..\src\app\services` path
+- To change the baseApiUrl go to `...\src\environments\environment.ts `
 
 ### Pages
 
