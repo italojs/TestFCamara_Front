@@ -10,7 +10,7 @@ This is a simple FCamara test
 
 ### Getting Started
 
-- setup and run this [api]:(https://github.com/italojs/Test_FCamara_API) first;
+- setup and run this [api](https://github.com/italojs/Test_FCamara_API) first;
 - Run `npm intall` in project path
 - Run `ng serve` for crate a dev server. 
 - Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -43,7 +43,6 @@ Login page
 Home Page(product list).
 
 You can't access this page without did a login before
-
 
 
 
